@@ -25,7 +25,7 @@ function Home(){
 				alt="google logo" 
 			/>
 			<div className="home_inputContainer">
-				<Search />
+				<Search/>
 			</div>
 		</div>
 	</div>
