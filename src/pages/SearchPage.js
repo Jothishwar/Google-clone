@@ -16,8 +16,8 @@ function SearchPage() {
 
 	const [{term},dispatch] = useStateValue();
 
-	//const { data } = useGoogleSearch(term); //Live API Call
-	const data = Response;
+	const { data } = useGoogleSearch(term); //Live API Call
+	//const data = Response;
 
 	console.log(data);
 	return (
@@ -70,9 +70,31 @@ function SearchPage() {
 					</div>
 				</div>
 			</div>
-			<div className="searchpage_results">
 
-			</div>
+			{term && (
+				<div className="searchpage_results">
+					<p className="searchpage_count">
+						About {data?.searchInformation.formattedTotalResults} 
+						results ({data?.searchInformation.formattedSearchTime} seconds) for {term}
+					</p>
+
+					{data?.items.map((item) => (
+						<div className="searchpage_result">
+							<a href={item.link}>
+								{item.displayLink}
+							</a>
+							<a className="searchpage_resultTitle" href={item.link}>
+								<h2>{item.title}</h2>
+							</a>
+							<p className="searchpage_resultSnippet">
+								{item.snippet}
+							</p>
+						</div>
+						))
+					}
+
+				</div>
+			)}
 		</div>
 	)
 }
