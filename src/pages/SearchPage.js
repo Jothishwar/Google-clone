@@ -2,7 +2,7 @@ import React from 'react'
 import './SearchPage.css';
 import { useStateValue } from "../StateProvider";
 import useGoogleSearch from "../useGoogleSearch";
-import Response from "../response";
+// import Response from "../response";
 import {Link} from "react-router-dom";
 import Search from "./Search";
 import SearchIcon from '@mui/icons-material/Search';
@@ -19,7 +19,7 @@ function SearchPage() {
 	const { data } = useGoogleSearch(term); //Live API Call
 	//const data = Response;
 
-	console.log(data);
+	// console.log(data);
 	return (
 		<div className="searchpage">
 			<div className="searchpage_header">
