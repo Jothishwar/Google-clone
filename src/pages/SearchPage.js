@@ -35,27 +35,27 @@ function SearchPage() {
 					<div className="searchpage_options">
 						<div className="options_left">
 							<div className="searchpage_option">
-								<SearchIcon />
+								<SearchIcon className="icon" />
 								<Link to="/all">All</Link>
 							</div>
 							<div className="searchpage_option">
-								<DescriptionIcon />
+								<DescriptionIcon className="icon" />
 								<Link to="/news">News</Link>
 							</div>
 							<div className="searchpage_option">
-								<ImageIcon />
+								<ImageIcon className="icon" />
 								<Link to="/image">Images</Link>
 							</div>
 							<div className="searchpage_option">
-								<LocalOfferIcon />
+								<LocalOfferIcon className="icon" />
 								<Link to="/shopping">shopping</Link>
 							</div>
 							<div className="searchpage_option">
-								<RoomIcon />
+								<RoomIcon className="icon" />
 								<Link to="/maps">Maps</Link>
 							</div>
 							<div className="searchpage_option">
-								<MoreVertIcon />
+								<MoreVertIcon className="icon" />
 								<Link to="/more">More</Link>
 							</div>
 						</div>

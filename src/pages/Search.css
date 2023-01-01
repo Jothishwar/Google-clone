@@ -51,3 +51,10 @@
 .search_buttonsHidden{
 	display: none !important;
 }
+
+
+@media(max-width:425px){
+	.search_input{
+		width: 300px !important ;
+	}
+}
